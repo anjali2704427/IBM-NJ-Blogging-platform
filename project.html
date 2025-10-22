@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBM-NJ Blogging Platform</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header Navigation */
+        header {
+            background-color: #1f1f2e;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+
+        header .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(120deg, #3f87a6, #ebf8e1);
+            color: #1f1f2e;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        /* Blog Posts Layout */
+        .posts-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .post-card {
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        .post-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .post-card h2 {
+            color: #3f87a6;
+            margin-bottom: 0.5rem;
+        }
+
+        .post-card .date {
+            font-size: 0.9rem;
+            color: #888;
+            margin-bottom: 1rem;
+        }
+
+        .post-card .excerpt {
+            margin-bottom: 1rem;
+        }
+
+        .post-card a {
+            color: #3f87a6;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #1f1f2e;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">IBM-NJ Blogs</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Posts</a></li>
+                <li><a href="#">Create</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to IBM-NJ Blogging Platform</h1>
+        <p>Share your thoughts, stories, and ideas with the world.</p>
+    </section>
+
+    <!-- Blog Posts -->
+    <section class="posts-container">
+        <div class="post-card">
+            <h2>How to Start Blogging</h2>
+            <p class="date">October 20, 2025</p>
+            <p class="excerpt">Learn the basics of starting your own blog, finding your niche, and growing your audience.</p>
+            <a href="#">Read More →</a>
+        </div>
+
+        <div class="post-card">
+            <h2>AI Trends in 2025</h2>
+            <p class="date">October 18, 2025</p>
+            <p class="excerpt">Explore the latest developments in artificial intelligence, and how IBM is leading innovation.</p>
+            <a href="#">Read More →</a>
+        </div>
+
+        <div class="post-card">
+            <h2>Why Write Blogs in 2025?</h2>
+            <p class="date">October 15, 2025</p>
+            <p class="excerpt">Discover the power of digital storytelling and the benefits of blogging in today's world.</p>
+            <a href="#">Read More →</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 IBM-NJ Blogging Platform. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
